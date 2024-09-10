@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    color: #004080; /* Corporate color */
+    margin-bottom: 30px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .contact-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f0c040; /* Accent color */
+    margin: 20px auto 0;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 0 20px;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  address p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  address p:first-child {
+    font-weight: 600;
+  }
+  
+  address p a {
+    color: #004080; /* Corporate color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  address p a:hover {
+    color: #f0c040; /* Accent color */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-section {
+      padding: 40px 15px;
+    }
+  
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-section p,
+    address p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    color: #004080; /* Corporate color */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .about-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f0c040; /* Accent color */
+    margin: 20px auto 0;
+  }
+  
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-content div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-content div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-content h3 {
+    font-size: 1.75rem;
+    color: #004080; /* Corporate color */
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .overview, .why-cyrus {
+    grid-column: span 2; /* Make Overview and Why Cyrus full width */
+  }
+  
+  .why-cyrus ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: disc; /* Bullet points */
+    color: #333;
+  }
+  
+  .why-cyrus ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .about-section {
+      padding: 40px 10px;
+    }
+  
+    .about-section h2 {
+      font-size: 2rem;
+    }
+  
+    .about-content div {
+      padding: 15px;
+    }
+  
+    .about-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .about-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
