@@ -1,0 +1,122 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.services {
+    padding: 40px;
+    transition: background 0.3s ease-in-out;
+    background: linear-gradient(to right, rgba(0, 91, 228, 0.6), rgba(101, 164, 247, 0.5))
+}
+
+.services-title {
+    text-align: center;
+    font-size: 36px;
+    color: #1f3b63;
+    margin-bottom: 30px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.services-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #e5bd0e;
+    border-radius: 5px;
+}
+
+.service-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.service-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-section h2 {
+    color: #1f3b63;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+}
+
+.service-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background-color: #f0c040; /* Stylish underline effect */
+    border-radius: 3px;
+}
+
+.service-section:hover h2 {
+    color: #f0c040;
+}
+
+.service-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
+    transition: margin 0.3s ease-in-out;
+}
+
+.service-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.service-section ul li:hover {
+    opacity: 1;
+}
+
+.service-section p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.service-section:hover p {
+    color: #555;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .services {
+        padding: 20px;
+    }
+
+    .services-title {
+        font-size: 28px;
+    }
+
+    .service-section h2 {
+        font-size: 24px;
+    }
+
+    .service-section p, .service-section ul li {
+        font-size: 14px;
+    }
+}

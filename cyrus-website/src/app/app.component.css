@@ -1,0 +1,5 @@
+span {
+    font-weight: bold; /* Makes the text bold */
+    font-size: 24px;   /* Optional: adjust font size if needed */
+    color: #ffffff;    /* Optional: adjust text color if needed */
+}

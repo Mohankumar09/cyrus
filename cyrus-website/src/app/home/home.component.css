@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.home-section {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 91, 228, 0.6), rgba(101, 164, 247, 0.5)), url('/assets/images/slide2.jpg') no-repeat center center/cover;
+    padding: 10px 20px; /* Space around the text */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 12px; /* Rounded corners for the carousel */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Added transform transition */
+    border-radius: 12px; /* Rounded corners for the slides */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9; /* Adjust opacity for transparency */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions for opacity and transform */
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    transform: scale(1.05); /* Slight zoom effect for active slide */
+}
+
+.content-section {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 40px; /* Increased padding for a more spacious look */
+    border-radius: 12px; /* Rounded corners for the box */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
+    margin: 20px auto; /* Center the section with automatic margins */
+    max-width: 1200px; /* Optional: limit the width for better readability */
+    font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+
+
+.content-section h2 {
+    font-size: 32px; /* Slightly larger font size */
+    color: #004080; /* Corporate color for the heading */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+    position: relative; /* Ensure the pseudo-element is positioned relative to the heading */
+}
+
+.content-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f0c040; /* Accent color */
+    margin: 20px auto 0;
+}
+
+.content-section p {
+    font-size: 18px; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Improved readability with line spacing */
+    color: #333; /* Darker text for better contrast */
+}
+
+.message-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px; /* Padding for spacing inside the section */
+    border-radius: 12px; /* Rounded corners for the box */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect */
+    margin: 20px auto; /* Center the section with automatic margins */
+    max-width: 1200px; /* Optional: limit the width for better readability */
+    font-family: "Plus Jakarta Sans", sans-serif; /* Font family */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.message-section h2 {
+    font-size: 32px; /* Larger font size for prominence */
+    color: #004080; /* Corporate color for the heading */
+    margin-bottom: 20px;
+    text-align: center; /* Center align heading */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+.message-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f0c040; /* Accent color */
+    margin: 20px auto 0;
+}
+.message-section p {
+    font-size: 18px; /* Larger font size for readability */
+    line-height: 1.8; /* Improved readability with line spacing */
+    color: #333; /* Darker text for better contrast */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.message-section ul {
+    margin: 20px 0; /* Space around the list */
+    padding-left: 20px; /* Space between list and border */
+    list-style-type: disc; /* Bullet points */
+    color: #333; /* Darker text color for contrast */
+    list-style-position: inside; /* Position bullets inside the list */
+}
+
+.message-section ul li {
+    font-size: 16px;
+    margin-bottom: 10px; /* Space between list items */
+    position: relative; /* Position relative for custom bullet styles */
+    padding-left: 20px; /* Space for custom bullet */
+}
+
+.message-section .signature {
+    font-weight: bold;
+    font-size: 18px; /* Larger font size for the signature */
+    text-align: center; /* Center align signature */
+    margin-top: 40px; /* Space above the signature */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-section h2 {
+        font-size: 2.5rem; /* Adjust heading size for smaller screens */
+    }
+
+    .home-section p {
+        font-size: 1.2rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    .carousel {
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}

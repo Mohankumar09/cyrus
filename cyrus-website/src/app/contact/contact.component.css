@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Galada&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-
-
 .contact-section {
-    background-color: #ffffff;
+    background-color: #89a8c4;
     padding: 60px 20px;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #333;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
     margin: 0 auto;
     text-align: center;
   }
@@ -33,7 +28,7 @@
   .contact-section p {
     font-size: 1rem;
     line-height: 1.8;
-    color: #555;
+    color: #0b07eb;
     margin: 0 0 20px;
   }
   
@@ -62,6 +57,80 @@
     color: #f0c040; /* Accent color */
   }
   
+  .form-container {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-container p {
+    color: #000000;
+  }
+  
+  .form-container h3 {
+    font-size: 2rem;
+    color: #004080; /* Corporate color */
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    border-color: #004080; /* Focus border color */
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color: #004080; /* Corporate color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #003366; /* Darker shade for hover */
+  }
+  
+  .map-container {
+    margin-top: 40px;
+  }
+  
+  .map-container h3 {
+    font-size: 1.5rem;
+    color: #004080; /* Corporate color */
+    margin-bottom: 20px;
+  }
+  
+  .map-container iframe {
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 400px;
+    max-width: 60%;
+  }
   @media screen and (max-width: 768px) {
     .contact-section {
       padding: 40px 15px;
@@ -75,5 +144,18 @@
     address p {
       font-size: 0.9rem;
     }
+    
+    .form-container h3 {
+      font-size: 1.5rem;
+    }
+
+    .form-container {
+        max-width: 300px;
+  
+    }
+
+    .map-container iframe {
+        height: 250px;
+      }
   }
   
